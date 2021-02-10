@@ -2,6 +2,9 @@ package kg.megacom;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.subtractExact;
+import static java.lang.Math.toDegrees;
+import static java.lang.Math.signum;
+import static java.lang.Math.hypot;
 
 public class Calculator {
     public static void main(String[] args) {
@@ -14,15 +17,15 @@ public class Calculator {
         System.out.println(substractExact);
 
         System.out.println("toDegrees");
-        double toDegrees = Math.toDegrees(15.5);// не понял формулы, (логики) преобразует радианы в градусы
+        double toDegrees = toDegrees(15.5);// не понял формулы, (логики) преобразует радианы в градусы
         System.out.println(toDegrees);
 
         System.out.println("Signum");
-        double signum = Math.signum(25);
+        double signum = signum(25);
         System.out.println(signum);// if(d > 0){return 1;} else if(d < 0) {return -1} else return 0;
 
         System.out.println("Hypot");
-        double hypot = Math.hypot(3,4);
+        double hypot = hypot(3,4);
         System.out.println(hypot);// (3*3) + (4*4) = (25/5) хорошо для нахождения длины гипотенузы
     }
 }
